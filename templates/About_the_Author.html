@@ -1,0 +1,26 @@
+{% extends "block.html" %}
+
+{% block title %}About the Author{% endblock %}
+    
+{% block content %}
+  <div class="container">
+      <h2>About the Author</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="imgAbt">
+            <img style='float:left;width:500px;height500px; margin-right:10px' src={{ url_for('static', filename = 'css/images/IMG_1922.png') }}/>
+            <p>Photo taken by Dr. Igrek in Sudurland, Iceland 2015</p>
+          </div>
+        </div>
+        <div class="col-md-5 col-md-push-2">
+            <p>Mariah Harvey is currently completing her MS in Government Analytics degree at Johns Hopkins in Washington, DC. Before studying at Johns Hopkins, Mariah studied economics and math at Seattle University in Seattle, Washington. It was here that she took her first forecasting class in the programming language R, which piqued her interest in learning more about machine learning and time-series analysis. </p>
+            <p>
+            In her spare time she is an urban walker enthusiast, an avid fiction reader, and enjoys learning about modern art. Her favorite artist is Cy Twombly.
+            </p>
+            <p> Please feel free to contact Mariah about this project at: <a href="mharve16@jhu.edu">mharve16@jhu.edu</a></p>
+          </div>
+      </div>
+  </div>
+ {% endblock %}
+
+

@@ -1,0 +1,24 @@
+{% extends "block.html" %}
+
+{% block title %}Methodology{% endblock %}
+ 
+{% block content %} 
+    <div class="container">  
+
+      <h2>Methodology</h2>
+      <img src={{ url_for('static', filename = 'css/images/dry.jpg') }} width="500" height="250" alt="dry" title="dry" border="0">
+      <img src={{ url_for('static', filename = 'css/images/ice.jpg') }} width="500" height="250" alt="ice" title="ice" border="0">
+      <p>Image credits: harmonyfdn.ca and climatechange.mit.edu</p>
+      <ul> 
+        <br>
+        <li><b>The Environmental Protection Agency<b/></li>
+        <p>The EPA has data, in CSV format, from the years 1990-2013 on national and international greenhouse gas emissions. More specifically the data includes gas emission output by sector, gas type, and year.</p>
+        <li>The World Bank</li>
+        <p>The World Bank&#39s data is downloadable in Excel, XML, and CSV formats. The data includes total CO2 emissions from fossil fuels by country and year. </p>
+        <li>World Resources Institute</li>
+        <p>The World Resources Institute has developed the API CAIT to look up gas emissions by US state and by country. The API also contains other economic indicators by country such as GDP, population, and overall energy use.</p>
+      </ul>
+    </div>
+{% endblock %}
+
+
